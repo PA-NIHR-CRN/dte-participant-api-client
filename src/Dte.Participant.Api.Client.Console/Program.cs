@@ -16,7 +16,7 @@ namespace Dte.Participant.Api.Client.Console
             {
                 BaseAddress = new Uri("https://localhost:7001/")
             };
-            var authString = "Basic " + Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("nihr-dte-study-api" + ":" + "e!A1y?L8E2pC"));
+            var authString = "Basic " + Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("nihr-dte-study-api" + ":" + ""));
             httpClient.DefaultRequestHeaders.Add("Authorization", authString);
 
             var headerService = new HeaderService();
